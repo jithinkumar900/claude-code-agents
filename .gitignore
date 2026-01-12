@@ -1,0 +1,49 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# Local settings and secrets
+settings.local.json
+*.local.json
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Claude Code cache
+.claude-cache/
+
+# Node modules (if any tooling is added)
+node_modules/
+
+# Python (if any tooling is added)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Backup files
+*.bak
+*.backup
