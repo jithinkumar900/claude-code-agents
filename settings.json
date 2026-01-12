@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(kubectl:*)",
+      "Bash(helm:*)",
+      "Bash(docker:*)",
+      "Bash(git:*)",
+      "Bash(aws:*)",
+      "Bash(gcloud:*)",
+      "Bash(az:*)",
+      "Bash(terraform:*)",
+      "Bash(psql:*)",
+      "Bash(mysql:*)",
+      "Bash(redis-cli:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(jq:*)",
+      "Bash(yq:*)",
+      "Read(./**)",
+      "Glob(./**)"
+    ],
+    "deny": [
+      "Read(.env*)",
+      "Read(./secrets/**)",
+      "Read(**/.env*)",
+      "Read(**/secrets/**)",
+      "Read(~/.aws/credentials)",
+      "Read(~/.kube/config)",
+      "Bash(rm -rf:*)",
+      "Bash(sudo:*)",
+      "Bash(chmod 777:*)"
+    ]
+  },
+  "env": {
+    "KUBE_NAMESPACE": "default",
+    "AWS_REGION": "us-east-1",
+    "TZ": "UTC"
+  }
+}
